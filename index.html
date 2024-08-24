@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grievance Lodging System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">GrievanceLodge</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Raise Your Voice for Better Public Service</h1>
+            <p>Lodge your complaints about public services and help us improve.</p>
+            <a href="#complaint-form" class="btn">Submit a Complaint</a>
+        </div>
+    </header>
+
+    <main id="complaint-form">
+        <section class="form-section">
+            <h2>Submit Your Complaint</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="category">Complaint Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="transport">Transport</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="education">Education</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="complaint">Complaint Details:</label>
+                <textarea id="complaint" name="complaint" rows="6" required></textarea>
+
+                <label for="file">Upload Supporting Documents:</label>
+                <input type="file" id="file" name="file">
+
+                <button type="submit">Submit Complaint</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GrievanceLodge. All rights reserved.</p>
+    </footer>
+</body>
+</html>
